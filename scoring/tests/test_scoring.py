@@ -22,6 +22,7 @@ from score import (  # type: ignore[import-not-found]  # noqa: E402
     InvalidScoresheetException,
     Scorer,
 )
+from sr2026 import RawZone  # type: ignore[import-not-found]  # noqa: E402
 
 
 def shuffled(text: str) -> str:
@@ -33,24 +34,18 @@ def shuffled(text: str) -> str:
 class ScorerTests(unittest.TestCase):
     longMessage = True
 
-    def construct_scorer(self, robot_contents, zone_tokens):
-        return Scorer(
-            {
-                tla: {**info, 'robot_tokens': robot_contents.get(tla, "")}
-                for tla, info in self.teams_data.items()
-            },
-            {x: {'tokens': y} for x, y in zone_tokens.items()},
-        )
+    def construct_scorer(self, zones):
+        return Scorer(self.teams_data, zones)
 
-    def assertScores(self, expected_scores, robot_contents, zone_tokens):
-        scorer = self.construct_scorer(robot_contents, zone_tokens)
+    def assertScores(self, expected_scores, zones):
+        scorer = self.construct_scorer(zones)
         scorer.validate(None)
         actual_scores = scorer.calculate_scores()
 
         self.assertEqual(expected_scores, actual_scores, "Wrong scores")
 
-    def assertInvalidScoresheet(self, robot_contents, zone_tokens, *, code):
-        scorer = self.construct_scorer(robot_contents, zone_tokens)
+    def assertInvalidScoresheet(self, zones, *, code):
+        scorer = self.construct_scorer(zones)
 
         with self.assertRaises(InvalidScoresheetException) as cm:
             scorer.validate(None)
@@ -61,17 +56,17 @@ class ScorerTests(unittest.TestCase):
             f"Wrong error code, message was: {cm.exception}",
         )
 
-    def setUp(self):
+    def setUp(self) -> None:
         self.teams_data = {
-            'ABC': {'zone': 0, 'present': True, 'left_scoring_zone': False},
-            'DEF': {'zone': 1, 'present': True, 'left_scoring_zone': False},
+            'GGG': {'zone': 0, 'present': True, 'left_starting_zone': False},
+            'OOO': {'zone': 1, 'present': True, 'left_starting_zone': False},
         }
-        tokens_per_zone = 'B' * 5 + 'S' * 3 + 'G'
-        self.zone_tokens = {
-            0: shuffled(tokens_per_zone),
-            1: shuffled(tokens_per_zone),
-            2: shuffled(tokens_per_zone),
-            3: shuffled(tokens_per_zone),
+        self.zones: dict[int, RawZone] = {
+            zone_id: RawZone({
+                'red': 0,
+                'blue': 0,
+            })
+            for zone_id in range(4)
         }
 
     def test_template(self):
@@ -96,27 +91,74 @@ class ScorerTests(unittest.TestCase):
 
     # Scoring logic
 
-    ...
+    def test_left_starting_zone(self) -> None:
+        self.teams_data['GGG']['left_starting_zone'] = True
+        self.assertScores(
+            {
+                'GGG': 1,
+                'OOO': 0,
+            },
+            self.zones,
+        )
 
-    # Invalid characters
+    def test_single_token(self) -> None:
+        self.zones[0]['blue'] = 1
+        self.assertScores(
+            {
+                'GGG': 2,
+                'OOO': 0,
+            },
+            self.zones,
+        )
 
-    ...
+    def test_two_similar_tokens(self) -> None:
+        self.zones[0]['blue'] = 2
+        self.assertScores(
+            {
+                'GGG': 3,
+                'OOO': 0,
+            },
+            self.zones,
+        )
 
-    # Missing tokens
+    def test_two_different_tokens(self) -> None:
+        self.zones[0]['red'] = 1
+        self.zones[0]['blue'] = 1
+        self.assertScores(
+            {
+                'GGG': 1,
+                'OOO': 0,
+            },
+            self.zones,
+        )
 
-    ...
-
-    # Extra tokens
-
-    ...
-
-    # Tolerable input deviances
-
-    ...
+    def test_mixed_tokens(self) -> None:
+        self.zones[0]['red'] = 3
+        self.zones[0]['blue'] = 1
+        self.assertScores(
+            {
+                'GGG':  3,
+                'OOO': 0,
+            },
+            self.zones,
+        )
 
     # Impossible scenarios
 
-    ...
+    def test_too_many_tokens_simple(self) -> None:
+        self.zones[0]['red'] = 100
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='too_many_tokens',
+        )
+
+    def test_too_many_tokens_spread(self) -> None:
+        self.zones[0]['red'] = 7
+        self.zones[1]['red'] = 7
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='too_many_tokens',
+        )
 
 
 if __name__ == '__main__':

@@ -25,10 +25,6 @@ from sr.comp.types import ScoreArenaZonesData, ScoreData, ScoreTeamData, TLA
 from sr2026 import RawZone
 
 
-class SR2026ScoreTeamData(ScoreTeamData):
-    left_starting_zone: bool
-
-
 class Converter(BaseConverter):
     """
     Base class for converting between representations of a match's score.
