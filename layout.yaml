@@ -12,7 +12,33 @@ teams:
   - name: level-2
     display_name: Shepherd Level 2
     teams:
-      - ABC
-      - SRZ1
-      - SRZ2
-      - SRZ3
+      # TODO: fit teams to their real locations
+      - ABS
+      - BGS
+      - BPV
+      - BRK
+      - CCR
+      - CLY
+      - DCS
+      - HAB
+      - HAY
+      - HRO
+      - HRS
+      - HZW
+      - JCC
+      - KEG
+      - KEV
+      - MAI
+      - MDN
+      - PSC
+      - QMC
+      - RGS
+      - RTS
+      - SEN
+      - SHF
+      - SOG
+      - SWL
+      - TFS
+      - TLC
+      - TMD
+      - WGS

@@ -1,14 +1,92 @@
 # Mapping of teams at the competition, from their TLA to their properties.
 teams:
-    ABC:
-        name: Absolutely Brilliant College
-        rookie: false
-    SRZ1:
-        name: Example team 1
-        rookie: false
-    SRZ2:
-        name: Example team 2
-        rookie: false
-    SRZ3:
-        name: Example team 3
-        rookie: false
+    ABS:
+        name: Abingdon School
+
+    BGS:
+        name: Bristol Grammar School
+        rookie: true
+
+    BPV:
+        name: Barton Peveril College
+
+    BRK:
+        name: Brockenhurst College
+
+    CCR:
+        name: Cirencester College
+
+    CLY:
+        name: The College of Richard Collyer (Horsham)
+
+    DCS:
+        name: Dr Challoner's Grammar School
+
+    HAB:
+        name: Haberdashers Boys School
+
+    HAY:
+        name: Haydon School
+
+    HRO:
+        name: Headington Rye School
+
+    HRS:
+        name: Hills Road Sixth Form College
+
+    HZW:
+        name: Hazelwick School
+
+    JCC:
+        name: Joseph Chamberlain College
+        rookie: true
+
+    KEG:
+        name: King Edward VI Grammar School, Chelmsford
+
+    KEV:
+        name: King Edward VI School
+
+    MAI:
+        name: Gymnasium Markt Indersdorf
+
+    MDN:
+        name: Midsomer Norton Friends
+
+    PSC:
+        name: Peter Symonds College
+
+    QMC:
+        name: Queen Mary's College
+
+    RGS:
+        name: RGS Guildford
+
+    RTS:
+        name: Ruthin School
+
+    SEN:
+        name: Southend High School for Boys
+
+    SHF:
+        name: SHK Friend group
+
+    SOG:
+        name: Saint Olaves Grammar School
+
+    SWL:
+        name: Space Studio West London
+        rookie: true
+
+    TFS:
+        name: Tiffin School for Boys
+
+    TLC:
+        name: The Ladies College
+
+    TMD:
+        name: Tormead School
+        rookie: true
+
+    WGS:
+        name: Wisbech Grammar School
