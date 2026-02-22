@@ -1,8 +1,16 @@
 # List of regions within the venue and the teams which are in that area.
 # Used for the shepherding screens.
 teams:
-  - name: fixed-string-region-id
-    display_name: Human Readable Region Name
+  - name: level-3-north
+    display_name: Shepherd Level 3 North
+    teams: []
+
+  - name: level-3-south
+    display_name: Shepherd Level 3 South
+    teams: []
+
+  - name: level-2
+    display_name: Shepherd Level 2
     teams:
       - ABC
       - SRZ1
