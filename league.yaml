@@ -1,6 +1,271 @@
-# Description of the league matches to be played.
-# The format is `matches` -> number -> arena -> list of teams.
-# Match numbers are 0-N, preferably in order, and must not omit any values.
-# The list of teams is ordered -- zone 0 first up to the Nth zone.
-
-matches: {}
+matches:
+  0:
+    main:
+    - ABS
+    - BGS
+    - BPV
+    - BRK
+  1:
+    main:
+    - CCR
+    - CLY
+    - DCS
+    - HAB
+  2:
+    main:
+    - HAY
+    - HRO
+    - HRS
+    - HZW
+  3:
+    main:
+    - JCC
+    - KEG
+    - KEV
+    - MAI
+  4:
+    main:
+    - MDN
+    - PSC
+    - QMC
+    - RGS
+  5:
+    main:
+    - RTS
+    - SEN
+    - SHF
+    - ABS
+  6:
+    main:
+    - SOG
+    - CCR
+    - BRK
+    - SWL
+  7:
+    main:
+    - DCS
+    - TFS
+    - TLC
+    - BPV
+  8:
+    main:
+    - HAB
+    - TMD
+    - BGS
+    - HRS
+  9:
+    main:
+    - RGS
+    - KEV
+    - CLY
+    - HAY
+  10:
+    main:
+    - HRO
+    - RTS
+    - JCC
+    - WGS
+  11:
+    main:
+    - SHF
+    - KEG
+    - HZW
+    - QMC
+  12:
+    main:
+    - PSC
+    - MAI
+    - SEN
+    - SOG
+  13:
+    main:
+    - KEV
+    - SWL
+    - TFS
+    - BGS
+  14:
+    main:
+    - TLC
+    - HRS
+    - ABS
+    - CCR
+  15:
+    main:
+    - TMD
+    - BRK
+    - RTS
+    - MDN
+  16:
+    main:
+    - HZW
+    - JCC
+    - RGS
+    - DCS
+  17:
+    main:
+    - KEG
+    - HAY
+    - BPV
+    - PSC
+  18:
+    main:
+    - QMC
+    - WGS
+    - HAB
+    - SEN
+  19:
+    main:
+    - BGS
+    - SHF
+    - HRO
+    - CLY
+  20:
+    main:
+    - TMD
+    - ABS
+    - SOG
+    - TFS
+  21:
+    main:
+    - SWL
+    - TLC
+    - MDN
+    - JCC
+  22:
+    main:
+    - HRS
+    - RGS
+    - MAI
+    - RTS
+  23:
+    main:
+    - WGS
+    - HZW
+    - CCR
+    - KEV
+  24:
+    main:
+    - BRK
+    - DCS
+    - HAY
+    - SEN
+  25:
+    main:
+    - BPV
+    - SOG
+    - QMC
+    - HRO
+  26:
+    main:
+    - SWL
+    - HAB
+    - PSC
+    - SHF
+  27:
+    main:
+    - CLY
+    - TLC
+    - TMD
+    - KEG
+  28:
+    main:
+    - TFS
+    - MDN
+    - WGS
+    - MAI
+  29:
+    main:
+    - JCC
+    - HAY
+    - BGS
+    -
+  30:
+    main:
+    - SEN
+    - BPV
+    - RGS
+    - CCR
+  31:
+    main:
+    - HRS
+    - QMC
+    - BRK
+    - KEV
+  32:
+    main:
+    - DCS
+    - ABS
+    - SWL
+    - HRO
+  33:
+    main:
+    - SOG
+    - HZW
+    - RTS
+    - TLC
+  34:
+    main:
+    -
+    - PSC
+    - TFS
+    - CLY
+  35:
+    main:
+    - MAI
+    - SHF
+    - WGS
+    - TMD
+  36:
+    main:
+    - HAB
+    - MDN
+    - KEG
+    -
+  37:
+    main:
+    - RGS
+    - BRK
+    - HRO
+    -
+  38:
+    main:
+    - ABS
+    - JCC
+    - CLY
+    - QMC
+  39:
+    main:
+    - SHF
+    - TFS
+    - CCR
+    - HAY
+  40:
+    main:
+    - BPV
+    -
+    - SWL
+    - RTS
+  41:
+    main:
+    - SEN
+    - BGS
+    - MDN
+    - HZW
+  42:
+    main:
+    - KEG
+    - WGS
+    - HRS
+    - SOG
+  43:
+    main:
+    - KEV
+    - TMD
+    - PSC
+    - DCS
+  44:
+    main:
+    - TLC
+    - HAB
+    - MAI
+    -
