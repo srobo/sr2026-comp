@@ -1,5 +1,74 @@
 {% extends "_update.html" %}
 
-{% block valid_token_regex %}
-var valid_token_regex = /^[GOPY]*$/;
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .score-sheet label {
+            text-align: right;
+            padding-right: 5px;
+        }
+    </style>
+{% endblock %}
+
+{% macro input_count(x, y, label, name) %}
+    <foreignObject x="{{ x }}" y="{{ y }}" width="60" height="30">
+        <label for="{{ name }}">{{ label }}</label>
+    </foreignObject>
+    <foreignObject x="{{ x + 65 }}" y="{{ y }}" width="100" height="30">
+        <input
+            class="tokens"
+            type="number"
+            id="{{ name }}"
+            name="{{ name }}"
+            value="{{ request.form.get(name) | empty_if_none }}"
+            onkeyup="token_input_change(this);"
+        />
+    </foreignObject>
+{% endmacro %}
+
+{% macro zone(corner, x, y) %}
+    <g id="zone-{{ corner }}" transform="translate({{ x }} {{ y }})">
+        <g transform="translate(30 20)">
+            {{ input_tla(20, 0, corner) }}
+            {{ input_count(0, 40, "Red", 'zone_{}_red'.format(corner)) }}
+            {{ input_count(0, 80, "Blue", 'zone_{}_blue'.format(corner)) }}
+        </g>
+        <g transform="translate(30 135) scale(0.85 0.9)">
+            {{ input_present(90, 15, corner) }}
+            {{ input_checkbox(0, 45, 170, corner, "left_starting_zone", "Fully Left Lab") }}
+            {{ input_disqualified(50, 75, corner) }}
+        </g>
+    </g>
+{% endmacro %}
+
+{% block zone_labels %}
+    {# Yes, zone 0 deliberately bottom left #}
+    <text><tspan y="775" x="225" stroke="{{ corners[0].colour }}">Zone 0</tspan></text>
+    <text><tspan y="50" x="225" stroke="{{ corners[1].colour }}">Zone 1</tspan></text>
+    <text><tspan y="50" x="455" stroke="{{ corners[2].colour }}">Zone 2</tspan></text>
+    <text><tspan y="775" x="455" stroke="{{ corners[3].colour }}">Zone 3</tspan></text>
+{% endblock %}
+
+{% block zone_0 %}
+    {# Yes, zone 0 deliberately bottom left #}
+    {{ zone(0, 10, 305) }}
+{% endblock %}
+
+{% block zone_1 %}
+    {{ zone(1, 10, 40) }}
+{% endblock %}
+
+{% block zone_2 %}
+    {{ zone(2, 340, 40) }}
+{% endblock %}
+
+{% block zone_3 %}
+    {{ zone(3, 340, 305) }}
+{% endblock %}
+
+{% block zone_other_outline %}
+    <rect height="100" width="100" stroke="#000" y="250" x="250" stroke-width="1" fill="#f4f3ff" />
+{% endblock %}
+
+{% block zone_other %}
 {% endblock %}

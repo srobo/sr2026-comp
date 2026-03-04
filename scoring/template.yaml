@@ -1,30 +1,36 @@
 arena_id: main
 arena_zones:
   0:
-    tokens: ''
+    red: 0
+    blue: 0
   1:
-    tokens: ''
+    red: 0
+    blue: 0
   2:
-    tokens: ''
+    red: 0
+    blue: 0
   3:
-    tokens: ''
-  other:
-    tokens: ''
+    red: 0
+    blue: 0
 match_number: 0
 teams:
   TLA0:
     disqualified: false
     present: true
+    left_starting_zone: false
     zone: 0
   TLA1:
     disqualified: true
     present: false
+    left_starting_zone: false
     zone: 1
   TLA2:
     disqualified: false
     present: true
+    left_starting_zone: false
     zone: 2
   TLA3:
     disqualified: false
     present: false
+    left_starting_zone: false
     zone: 3
