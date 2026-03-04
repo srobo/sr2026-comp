@@ -8,7 +8,7 @@ teams:
         rookie: true
 
     BPV:
-        name: Barton Peveril College
+        name: Barton Peveril Sixth Form College
 
     BRK:
         name: Brockenhurst College
@@ -17,13 +17,13 @@ teams:
         name: Cirencester College
 
     CLY:
-        name: The College of Richard Collyer (Horsham)
+        name: The College of Richard Collyer
 
     DCS:
-        name: Dr Challoner's Grammar School
+        name: Dr Challoner’s Grammar School
 
     HAB:
-        name: Haberdashers Boys School
+        name: Haberdashers’ Boys’ School
 
     HAY:
         name: Haydon School
@@ -42,7 +42,7 @@ teams:
         rookie: true
 
     KEG:
-        name: King Edward VI Grammar School, Chelmsford
+        name: King Edward VI Grammar School
 
     KEV:
         name: King Edward VI School
@@ -57,10 +57,10 @@ teams:
         name: Peter Symonds College
 
     QMC:
-        name: Queen Mary's College
+        name: Queen Mary’s College
 
     RGS:
-        name: RGS Guildford
+        name: Royal Grammar School Guildford
 
     RTS:
         name: Ruthin School
@@ -72,7 +72,7 @@ teams:
         name: SHK Friend group
 
     SOG:
-        name: Saint Olaves Grammar School
+        name: St. Olave’s Grammar School
 
     SWL:
         name: Space Studio West London
@@ -82,7 +82,7 @@ teams:
         name: Tiffin School for Boys
 
     TLC:
-        name: The Ladies College
+        name: The Ladies’ College
 
     TMD:
         name: Tormead School
