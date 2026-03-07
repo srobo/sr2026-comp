@@ -46,7 +46,6 @@ teams:
 
     KEV:
         name: King Edward VI School
-        dropped_out_after: 0
 
     MAI:
         name: Gymnasium Markt Indersdorf
