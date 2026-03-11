@@ -33,10 +33,6 @@ teams:
     HZW:
         name: Hazelwick School
 
-    JCC:
-        name: Joseph Chamberlain College
-        rookie: true
-
     KEG:
         name: King Edward VI Grammar School
 

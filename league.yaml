@@ -19,7 +19,7 @@ matches:
     - HZW
   3:
     main:
-    - JCC
+    -
     - KEG
     -
     - MAI
@@ -63,7 +63,7 @@ matches:
     main:
     - HRO
     - RTS
-    - JCC
+    -
     - WGS
   11:
     main:
@@ -98,7 +98,7 @@ matches:
   16:
     main:
     - HZW
-    - JCC
+    -
     - RGS
     - DCS
   17:
@@ -130,7 +130,7 @@ matches:
     - SWL
     - TLC
     - MDN
-    - JCC
+    -
   22:
     main:
     - HRS
@@ -175,7 +175,7 @@ matches:
     - MAI
   29:
     main:
-    - JCC
+    -
     - HAY
     -
     -
@@ -230,7 +230,7 @@ matches:
   38:
     main:
     - ABS
-    - JCC
+    -
     - CLY
     - QMC
   39:
