@@ -2,7 +2,7 @@ matches:
   0:
     main:
     - ABS
-    - BGS
+    -
     - BPV
     - BRK
   1:
@@ -19,9 +19,9 @@ matches:
     - HZW
   3:
     main:
-    - JCC
+    -
     - KEG
-    - KEV
+    -
     - MAI
   4:
     main:
@@ -51,19 +51,19 @@ matches:
     main:
     - HAB
     - TMD
-    - BGS
+    -
     - HRS
   9:
     main:
     - RGS
-    - KEV
+    -
     - CLY
     - HAY
   10:
     main:
     - HRO
     - RTS
-    - JCC
+    -
     - WGS
   11:
     main:
@@ -79,10 +79,10 @@ matches:
     - SOG
   13:
     main:
-    - KEV
+    -
     - SWL
     - TFS
-    - BGS
+    -
   14:
     main:
     - TLC
@@ -98,7 +98,7 @@ matches:
   16:
     main:
     - HZW
-    - JCC
+    -
     - RGS
     - DCS
   17:
@@ -115,7 +115,7 @@ matches:
     - SEN
   19:
     main:
-    - BGS
+    -
     - SHF
     - HRO
     - CLY
@@ -130,7 +130,7 @@ matches:
     - SWL
     - TLC
     - MDN
-    - JCC
+    -
   22:
     main:
     - HRS
@@ -142,7 +142,7 @@ matches:
     - WGS
     - HZW
     - CCR
-    - KEV
+    -
   24:
     main:
     - BRK
@@ -175,9 +175,9 @@ matches:
     - MAI
   29:
     main:
-    - JCC
+    -
     - HAY
-    - BGS
+    -
     -
   30:
     main:
@@ -190,7 +190,7 @@ matches:
     - HRS
     - QMC
     - BRK
-    - KEV
+    -
   32:
     main:
     - DCS
@@ -230,7 +230,7 @@ matches:
   38:
     main:
     - ABS
-    - JCC
+    -
     - CLY
     - QMC
   39:
@@ -248,7 +248,7 @@ matches:
   41:
     main:
     - SEN
-    - BGS
+    -
     - MDN
     - HZW
   42:
@@ -259,7 +259,7 @@ matches:
     - SOG
   43:
     main:
-    - KEV
+    -
     - TMD
     - PSC
     - DCS

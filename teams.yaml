@@ -3,10 +3,6 @@ teams:
     ABS:
         name: Abingdon School
 
-    BGS:
-        name: Bristol Grammar School
-        rookie: true
-
     BPV:
         name: Barton Peveril Sixth Form College
 
@@ -37,15 +33,8 @@ teams:
     HZW:
         name: Hazelwick School
 
-    JCC:
-        name: Joseph Chamberlain College
-        rookie: true
-
     KEG:
         name: King Edward VI Grammar School
-
-    KEV:
-        name: King Edward VI School
 
     MAI:
         name: Gymnasium Markt Indersdorf
