@@ -2,7 +2,7 @@ matches:
   0:
     main:
     - ABS
-    - BGS
+    -
     - BPV
     - BRK
   1:
@@ -51,7 +51,7 @@ matches:
     main:
     - HAB
     - TMD
-    - BGS
+    -
     - HRS
   9:
     main:
@@ -82,7 +82,7 @@ matches:
     -
     - SWL
     - TFS
-    - BGS
+    -
   14:
     main:
     - TLC
@@ -115,7 +115,7 @@ matches:
     - SEN
   19:
     main:
-    - BGS
+    -
     - SHF
     - HRO
     - CLY
@@ -177,7 +177,7 @@ matches:
     main:
     - JCC
     - HAY
-    - BGS
+    -
     -
   30:
     main:
@@ -248,7 +248,7 @@ matches:
   41:
     main:
     - SEN
-    - BGS
+    -
     - MDN
     - HZW
   42:

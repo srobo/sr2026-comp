@@ -14,7 +14,6 @@ teams:
     teams:
       # TODO: fit teams to their real locations
       - ABS
-      - BGS
       - BPV
       - BRK
       - CCR

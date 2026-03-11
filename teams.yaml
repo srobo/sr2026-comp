@@ -3,10 +3,6 @@ teams:
     ABS:
         name: Abingdon School
 
-    BGS:
-        name: Bristol Grammar School
-        rookie: true
-
     BPV:
         name: Barton Peveril Sixth Form College
 
