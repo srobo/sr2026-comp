@@ -21,7 +21,7 @@ matches:
     main:
     - JCC
     - KEG
-    - KEV
+    -
     - MAI
   4:
     main:
@@ -56,7 +56,7 @@ matches:
   9:
     main:
     - RGS
-    - KEV
+    -
     - CLY
     - HAY
   10:
@@ -79,7 +79,7 @@ matches:
     - SOG
   13:
     main:
-    - KEV
+    -
     - SWL
     - TFS
     - BGS
@@ -142,7 +142,7 @@ matches:
     - WGS
     - HZW
     - CCR
-    - KEV
+    -
   24:
     main:
     - BRK
@@ -190,7 +190,7 @@ matches:
     - HRS
     - QMC
     - BRK
-    - KEV
+    -
   32:
     main:
     - DCS
@@ -259,7 +259,7 @@ matches:
     - SOG
   43:
     main:
-    - KEV
+    -
     - TMD
     - PSC
     - DCS
