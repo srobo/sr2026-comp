@@ -3,39 +3,38 @@
 teams:
   - name: level-3-north
     display_name: Shepherd Level 3 North
-    teams: []
+    teams:
+      - CLY
+      - HRO
+      - WGS
+      - BRK
+      - KEG
+      - MDN
+      - PSC
+      - RGS
+      - TFS
+      - HRS
 
   - name: level-3-south
     display_name: Shepherd Level 3 South
-    teams: []
+    teams:
+      - QMC
+      - SEN
+      - MAI
+      - HAB
+      - ABS
+      - CCR
+      - HAY
+      - HZW
 
   - name: level-2
     display_name: Shepherd Level 2
     teams:
-      # TODO: fit teams to their real locations
-      - ABS
-      - BPV
-      - BRK
-      - CCR
-      - CLY
       - DCS
-      - HAB
-      - HAY
-      - HRO
-      - HRS
-      - HZW
-      - KEG
-      - MAI
-      - MDN
-      - PSC
-      - QMC
-      - RGS
-      - RTS
-      - SEN
+      - TLC
       - SHF
       - SOG
-      - SWL
-      - TFS
-      - TLC
+      - BPV
       - TMD
-      - WGS
+      - RTS
+      - SWL
