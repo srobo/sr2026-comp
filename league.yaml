@@ -32,7 +32,7 @@ matches:
   5:
     main:
     - RTS
-    - SEN
+    -
     - SHF
     - ABS
   6:
@@ -75,7 +75,7 @@ matches:
     main:
     - PSC
     - MAI
-    - SEN
+    -
     - SOG
   13:
     main:
@@ -112,7 +112,7 @@ matches:
     - QMC
     - WGS
     - HAB
-    - SEN
+    -
   19:
     main:
     -
@@ -148,7 +148,7 @@ matches:
     - BRK
     - DCS
     - HAY
-    - SEN
+    -
   25:
     main:
     - BPV
@@ -181,7 +181,7 @@ matches:
     -
   30:
     main:
-    - SEN
+    -
     - BPV
     - RGS
     - CCR
@@ -247,7 +247,7 @@ matches:
     - RTS
   41:
     main:
-    - SEN
+    -
     -
     - MDN
     - HZW
