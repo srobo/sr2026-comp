@@ -28,7 +28,7 @@ matches:
     - MDN
     - PSC
     - QMC
-    - RGS
+    -
   5:
     main:
     - RTS
@@ -55,7 +55,7 @@ matches:
     - HRS
   9:
     main:
-    - RGS
+    -
     -
     - CLY
     - HAY
@@ -99,7 +99,7 @@ matches:
     main:
     - HZW
     -
-    - RGS
+    -
     - DCS
   17:
     main:
@@ -134,7 +134,7 @@ matches:
   22:
     main:
     - HRS
-    - RGS
+    -
     - MAI
     - RTS
   23:
@@ -183,7 +183,7 @@ matches:
     main:
     -
     - BPV
-    - RGS
+    -
     - CCR
   31:
     main:
@@ -223,7 +223,7 @@ matches:
     -
   37:
     main:
-    - RGS
+    -
     - BRK
     - HRO
     -
