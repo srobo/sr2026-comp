@@ -89,7 +89,7 @@ knockout:
     - name: lower
       display_name: Lower Bracket
 
-# 23 team double elimination bracket.
+# 22 team double elimination bracket.
 #
 # Top 2 continue in the same bracket; bottom 2 go down a bracket.
 # If a team finishes in the bottom 2 in a match in the Lower bracket, they are out.
