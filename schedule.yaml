@@ -92,7 +92,8 @@ knockout:
 static_knockout:
   rounds:
     0:
-      matches: # Upper Round 1
+      display_name: Upper Round 1
+      matches:
         0:
           arena: main
           display_name: Upper Round 1 Match 1
@@ -104,7 +105,8 @@ static_knockout:
           start_time: 2026-04-12 12:49:00+01:00
           teams: [S14, S18, S15, S19]
     1:
-      matches: # Upper Round 2
+      display_name: Upper Round 2
+      matches:
         0:
           arena: main
           display_name: Upper Round 2 Match 1
@@ -126,7 +128,8 @@ static_knockout:
           start_time: 2026-04-12 13:24:00+01:00
           teams: [S2, '001', S7, S10]
     2:
-      matches: # Lower Round 1
+      display_name: Lower Round 1
+      matches:
         0:
           arena: main
           display_name: Lower Round 1 Match 1
@@ -138,7 +141,8 @@ static_knockout:
           start_time: 2026-04-12 13:39:00+01:00
           teams: ['102', '003', '012', '113']
     3:
-      matches: # Upper Round 3
+      display_name: Upper Round 3
+      matches:
         0:
           arena: main
           display_name: Upper Round 3 Match 1
@@ -150,7 +154,8 @@ static_knockout:
           start_time: 2026-04-12 13:54:00+01:00
           teams: ['121', '130', '111', '100']
     4:
-      matches: # Lower Round 2
+      display_name: Lower Round 2
+      matches:
         0:
           arena: main
           display_name: Lower Round 2 Match 1
@@ -162,7 +167,8 @@ static_knockout:
           start_time: 2026-04-12 14:09:00+01:00
           teams: ['201', '123', '210', '132']
     5:
-      matches: # Lower Round 3
+      display_name: Lower Round 3
+      matches:
         0:
           arena: main
           display_name: Lower Round 3 Match 1
@@ -174,28 +180,32 @@ static_knockout:
           start_time: 2026-04-12 14:39:00+01:00
           teams: ['401', '302', '410', '313']
     6:
-      matches: # Upper Semi Final
+      display_name: Upper Semi Final
+      matches:
         0:
           arena: main
           display_name: Upper Semi Final
           start_time: 2026-04-12 14:44:00+01:00
           teams: ['300', '311', '310', '301']
     7:
-      matches: # Lower Round 4
+      display_name: Lower Round 4
+      matches:
         0:
           arena: main
           display_name: Lower Round 4 Match 1
           start_time: 2026-04-12 14:59:00+01:00
           teams: ['500', '511', '510', '501']
     8:
-      matches: # Lower Semi Final
+      display_name: Lower Semi Final
+      matches:
         0:
           arena: main
           display_name: Lower Semi Final
           start_time: 2026-04-12 15:19:00+01:00
           teams: ['700', '603', '602', '701']
     9:
-      matches: # Grand Final
+      display_name: Grand Final
+      matches:
         0:
           arena: main
           display_name: Grand Final
