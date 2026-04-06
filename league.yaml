@@ -31,9 +31,9 @@ matches:
     -
   5:
     main:
-    - RTS
+    - 
+    - 
     -
-    - SHF
     - ABS
   6:
     main:
@@ -62,12 +62,12 @@ matches:
   10:
     main:
     - HRO
-    - RTS
+    - 
     -
     - WGS
   11:
     main:
-    - SHF
+    - 
     - KEG
     - HZW
     - QMC
@@ -93,7 +93,7 @@ matches:
     main:
     - TMD
     - BRK
-    - RTS
+    - 
     - MDN
   16:
     main:
@@ -116,7 +116,7 @@ matches:
   19:
     main:
     -
-    - SHF
+    - 
     - HRO
     - CLY
   20:
@@ -136,7 +136,7 @@ matches:
     - HRS
     -
     - MAI
-    - RTS
+    - 
   23:
     main:
     - WGS
@@ -160,7 +160,7 @@ matches:
     - SWL
     - HAB
     - PSC
-    - SHF
+    - 
   27:
     main:
     - CLY
@@ -201,7 +201,7 @@ matches:
     main:
     - SOG
     - HZW
-    - RTS
+    - 
     - TLC
   34:
     main:
@@ -212,7 +212,7 @@ matches:
   35:
     main:
     - MAI
-    - SHF
+    - 
     - WGS
     - TMD
   36:
@@ -235,7 +235,7 @@ matches:
     - QMC
   39:
     main:
-    - SHF
+    - 
     - TFS
     - CCR
     - HAY
@@ -244,7 +244,7 @@ matches:
     - BPV
     -
     - SWL
-    - RTS
+    - 
   41:
     main:
     -
