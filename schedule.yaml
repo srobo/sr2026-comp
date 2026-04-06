@@ -53,8 +53,8 @@ match_periods:
     description: Saturday league, early afternoon
 
   - start_time: 2026-04-11 16:19:00+01:00
-    end_time: 2026-04-11 16:54:00+01:00
-    max_end_time: 2026-04-11 17:10:00+01:00
+    end_time: 2026-04-11 16:50:00+01:00
+    max_end_time: 2026-04-11 17:00:00+01:00
     description: Saturday league, late afternoon
 
   - start_time: 2026-04-12 10:04:00+01:00
