@@ -57,6 +57,20 @@ class Scorer:
 
     def validate(self, other_data):
         totals = collections.Counter()
+
+        samples = {
+            f'zone-{zone_id}-{colour}': info[colour]
+            for zone_id, info in self._arena_data.items()
+            for colour in ('red', 'blue')
+        }
+        negative_samples = {x: y for x, y in samples.items() if y < 0}
+        if negative_samples:
+            raise InvalidScoresheetException(
+                "Cannot record negative numbers of samples (in a laboratory), "
+                f"got {negative_samples!r}.",
+                code='negative_sample_input',
+            )
+
         for zone_info in self._arena_data.values():
             totals.update(zone_info)
 
