@@ -3,25 +3,25 @@ matches:
     main:
     - CLY
     - HRO
-    - WGS
+    - KEG
     - BRK
   1:
     main:
+    - PSC
     - KEG
     - MDN
-    - PSC
     - TFS
   2:
     main:
-    - HRS
-    - QMC
-    - MAI
-    - SOG
+    - CCR
+    - HAB
+    - SWL
+    - BPV
   3:
     main:
     - ABS
     - CCR
-    - HAY
+    - WGS
     - HZW
   4:
     main:
@@ -39,32 +39,32 @@ matches:
     main:
     - SWL
     - MAI
-    - CLY
+    - TFS
     - KEG
   7:
     main:
-    - TFS
     - HAY
+    - CLY
     - HRO
     - HRS
   8:
     main:
     - PSC
-    - TLC
+    - QMC
     - SOG
     - ABS
   9:
     main:
-    - QMC
     - HZW
+    - TLC
     - TMD
     - DCS
   10:
     main:
-    - CCR
-    - HAB
-    - SWL
-    - BPV
+    - HRS
+    - QMC
+    - MAI
+    - SOG
   11:
     main:
     - MDN
