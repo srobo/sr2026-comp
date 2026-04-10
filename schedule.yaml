@@ -7,8 +7,8 @@
 match_slot_lengths:
   pre: 60
   match: 60
-  post: 90
-  total: 210
+  post: 30
+  total: 150
 #
 # Various staging related times, in seconds before the actual match start
 staging:
@@ -42,7 +42,7 @@ delays: []
 # after a period ends.
 match_periods:
   league:
-  - start_time: 2026-04-10 13:00:00+01:00
+  - start_time: 2026-04-10 13:12:30+01:00
     end_time: 2026-04-10 16:00:00+01:00
     max_end_time: 2026-04-10 16:00:00+01:00
     description: Friday training, afternoon
