@@ -42,9 +42,9 @@ delays: []
 # after a period ends.
 match_periods:
   league:
-  - start_time: 2026-04-10 13:00:00+01:00
-    end_time: 2026-04-10 16:00:00+01:00
-    max_end_time: 2026-04-10 16:00:00+01:00
+  - start_time: 2026-04-10 11:00:00+01:00
+    end_time: 2026-04-10 14:00:00+01:00
+    max_end_time: 2026-04-10 14:00:00+01:00
     description: Friday training, afternoon
 
 #
