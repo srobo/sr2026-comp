@@ -57,6 +57,20 @@ class Scorer:
 
     def validate(self, other_data):
         totals = collections.Counter()
+
+        inputs = {
+            f'zone-{zone_id}-{colour}': info[colour]
+            for zone_id, info in self._arena_data.items()
+            for colour in ('red', 'blue')
+        }
+        negative_inputs = {x: y for x, y in inputs.items() if y < 0}
+        if negative_inputs:
+            raise InvalidScoresheetException(
+                "Cannot record negative numbers of inputs (on a planet), "
+                f"got {negative_inputs!r}.",
+                code='negative_input',
+            )
+
         for zone_info in self._arena_data.values():
             totals.update(zone_info)
 
