@@ -1,5 +1,8 @@
 # Mapping of teams at the competition, from their TLA to their properties.
 teams:
+    SRZ:
+        name: Chaos Monkey
+
     ABS:
         name: Abingdon School
 

@@ -7,49 +7,49 @@ matches:
     - BRK
   1:
     main:
-    - PSC
+    - SRZ
     - KEG
     - MDN
     - TFS
   2:
     main:
-    - CCR
+    - SRZ
     - HAB
     - SWL
     - BPV
   3:
     main:
-    - ABS
+    - SRZ
     - CCR
     - WGS
     - HZW
   4:
     main:
-    - WGS
+    - SRZ
     - DCS
     - TLC
     - HAB
   5:
     main:
-    - BRK
+    - SRZ
     - BPV
     - MDN
     - TMD
   6:
     main:
-    - SWL
+    - SRZ
     - MAI
     - TFS
     - KEG
   7:
     main:
-    - HAY
+    - SRZ
     - CLY
     - HRO
     - HRS
   8:
     main:
-    - PSC
+    - SRZ
     - QMC
     - SOG
     - ABS

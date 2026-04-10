@@ -13,6 +13,7 @@ teams:
       - PSC
       - TFS
       - HRS
+      - SRZ
 
   - name: level-3-south
     display_name: Shepherd Level 3 South
