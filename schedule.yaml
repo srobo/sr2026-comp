@@ -5,10 +5,10 @@
 #
 # Matches are played within slots, set their lengths:
 match_slot_lengths:
-  pre: 60
-  match: 60
-  post: 30
-  total: 150
+  pre: 40
+  match: 600
+  post: 20
+  total: 660
 #
 # Various staging related times, in seconds before the actual match start
 staging:
