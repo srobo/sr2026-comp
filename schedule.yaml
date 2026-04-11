@@ -77,8 +77,8 @@ league:
   extra_spacing:
     # Supports ranges (`1-3`) and comma separated lists (`1,3`) or combinations
     # thereof (`4,8-10`). Must be a string.
-    - match_numbers: 1-20
-      duration: 0
+  - match_numbers: 1-20
+    duration: 0
 
 knockout:
   round_spacing: 300 # Delay between knockout rounds
