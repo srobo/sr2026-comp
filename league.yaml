@@ -74,8 +74,8 @@ matches:
   12:
     main:
     - TLC
-    - TFS
     - BRK
+    - TFS
     - CLY
   13:
     main:
