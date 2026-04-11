@@ -89,7 +89,7 @@ class Scorer:
         if left_starting_zone_not_present:
             raise InvalidScoresheetException(
                 "Teams not present cannot have left their laboratory, "
-                f"check {negative_samples!r}.",
+                f"check {left_starting_zone_not_present!r}.",
                 code='left_starting_zone_not_present',
             )
 
