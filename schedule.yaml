@@ -64,9 +64,8 @@ match_periods:
 
 #
   knockout:
-  - start_time: 2026-04-12 12:34:00+01:00
+  - start_time: 2026-04-12 12:44:00+01:00
     end_time: 2026-04-12 15:55:00+01:00
-    max_end_time: 2026-04-12 15:55:00+01:00
     description: Knockouts
 
 league:
@@ -81,181 +80,49 @@ league:
     duration: 0
 
 knockout:
-  static: true
+  scheduler: structured
+
+  # Time delay between rounds (in seconds)
+  round_spacing:
+    default:  # delay_flex + minimum == nominal
+      delay_flex: 0
+      minimum: 0
+      nominal: 0
+    overrides:
+      # 0: Upper Round 1
+      1:  # Upper Round 2
+        delay_flex: 0
+        minimum: 600    # 10 minutes
+        nominal: 600    # 10 minutes
+      2:  # Lower Round 1
+        delay_flex: 0
+        minimum: 300    # 5 minutes
+        nominal: 300    # 5 minutes
+      # 3: Upper Round 3
+      4:  # Lower Round 2
+        delay_flex: 0
+        minimum: 300    # 5 minutes
+        nominal: 300    # 5 minutes
+      5:  # Lower Round 3
+        delay_flex: 0
+        minimum: 900    # 15 minutes
+        nominal: 900    # 15 minutes
+      # 6: Upper Semi Final
+      7:  # Lower Round 4
+        delay_flex: 0
+        minimum: 600    # 10 minutes
+        nominal: 600    # 10 minutes
+      8:  # Lower Semi Final
+        delay_flex: 0
+        minimum: 900    # 15 minutes
+        nominal: 900    # 15 minutes
+      9:  # Grand Final
+        delay_flex: 0
+        minimum: 900    # 15 minutes
+        nominal: 900    # 15 minutes
 
   brackets:
   - name: upper
     display_name: Upper Bracket
   - name: lower
     display_name: Lower Bracket
-
-# 22 team double elimination bracket.
-#
-# Top 2 continue in the same bracket; bottom 2 go down a bracket.
-# If a team finishes in the bottom 2 in a match in the Lower bracket, they are out.
-# All teams start in the Upper bracket.
-
-static_knockout:
-  rounds:
-    0:
-      display_name: Upper Round 1
-      matches:
-        0:
-          arena: main
-          display_name: Upper Round 1 Match 1
-          bracket: upper
-          start_time: 2026-04-12 12:44:00+01:00
-          teams: [S16, S17, null, S9]
-        1:
-          arena: main
-          display_name: Upper Round 1 Match 2
-          bracket: upper
-          start_time: 2026-04-12 12:49:00+01:00
-          teams: [null, S15, S10, S18]
-        2:
-          arena: main
-          display_name: Upper Round 1 Match 3
-          bracket: upper
-          start_time: 2026-04-12 12:54:00+01:00
-          teams: [S19, S22, S14, S11]
-        3:
-          arena: main
-          display_name: Upper Round 1 Match 4
-          bracket: upper
-          start_time: 2026-04-12 12:59:00+01:00
-          teams: [S20, S13, S12, S21]
-    1:
-      display_name: Upper Round 2
-      matches:
-        0:
-          arena: main
-          display_name: Upper Round 2 Match 1
-          bracket: upper
-          start_time: 2026-04-12 13:14:00+01:00 # Extra 5 minutes here
-          teams: ['000', S8, '011', S1]
-        1:
-          arena: main
-          display_name: Upper Round 2 Match 2
-          bracket: upper
-          start_time: 2026-04-12 13:19:00+01:00
-          teams: ['001', '010', S7, S2]
-        2:
-          arena: main
-          display_name: Upper Round 2 Match 3
-          bracket: upper
-          start_time: 2026-04-12 13:24:00+01:00
-          teams: [S6, '020', S3, '031']
-        3:
-          arena: main
-          display_name: Upper Round 2 Match 4
-          bracket: upper
-          start_time: 2026-04-12 13:29:00+01:00
-          teams: ['021', '030', S4, S5]
-    2:
-      display_name: Lower Round 1
-      matches:
-        0:
-          arena: main
-          display_name: Lower Round 1 Match 1
-          bracket: lower
-          start_time: 2026-04-12 13:39:00+01:00 # Extra 5 minutes here
-          teams: ['022', '112', '033', '103']
-        1:
-          arena: main
-          display_name: Lower Round 1 Match 2
-          bracket: lower
-          start_time: 2026-04-12 13:44:00+01:00
-          teams: ['113', '102', '023', '032']
-        2:
-          arena: main
-          display_name: Lower Round 1 Match 3
-          bracket: lower
-          start_time: 2026-04-12 13:49:00+01:00
-          teams: ['132', null, '123', '002']
-        3:
-          arena: main
-          display_name: Lower Round 1 Match 4
-          bracket: lower
-          start_time: 2026-04-12 13:54:00+01:00
-          teams: ['122', '133', '012', null]
-    3:
-      display_name: Upper Round 3
-      matches:
-        0:
-          arena: main
-          display_name: Upper Round 3 Match 1
-          bracket: upper
-          start_time: 2026-04-12 13:59:00+01:00
-          teams: ['121', '111', '100', '130']
-        1:
-          arena: main
-          display_name: Upper Round 3 Match 2
-          bracket: upper
-          start_time: 2026-04-12 14:04:00+01:00
-          teams: ['131', '120', '110', '101']
-    4:
-      display_name: Lower Round 2
-      matches:
-        0:
-          arena: main
-          display_name: Lower Round 2 Match 1
-          bracket: lower
-          start_time: 2026-04-12 14:14:00+01:00 # Extra 5 minutes here
-          teams: ['200', '211', '221', '230']
-        1:
-          arena: main
-          display_name: Lower Round 2 Match 2
-          bracket: lower
-          start_time: 2026-04-12 14:19:00+01:00
-          teams: ['220', '201', '231', '210']
-    5:
-      display_name: Lower Round 3
-      matches:
-        0:
-          arena: main
-          display_name: Lower Round 3 Match 1
-          bracket: lower
-          start_time: 2026-04-12 14:39:00+01:00 # Extra 5 minutes here
-          teams: ['411', '303', '312', '400']
-        1:
-          arena: main
-          display_name: Lower Round 3 Match 2
-          bracket: lower
-          start_time: 2026-04-12 14:44:00+01:00
-          teams: ['410', '302', '401', '313']
-    6:
-      display_name: Upper Semi Final
-      matches:
-        0:
-          arena: main
-          display_name: Upper Semi Final
-          bracket: upper
-          start_time: 2026-04-12 14:49:00+01:00
-          teams: ['301', '310', '311', '300']
-    7:
-      display_name: Lower Round 4
-      matches:
-        0:
-          arena: main
-          display_name: Lower Round 4 Match 1
-          bracket: lower
-          start_time: 2026-04-12 15:04:00+01:00 # Extra 5 minutes here
-          teams: ['500', '511', '510', '501']
-    8:
-      display_name: Lower Semi Final
-      matches:
-        0:
-          arena: main
-          display_name: Lower Semi Final
-          bracket: lower
-          start_time: 2026-04-12 15:24:00+01:00 # Extra 5 minutes here
-          teams: ['700', '602', '701', '603']
-    9:
-      display_name: Grand Final
-      matches:
-        0:
-          arena: main
-          display_name: Grand Final
-          bracket: upper
-          start_time: 2026-04-12 15:44:00+01:00 # Extra 5 minutes here
-          teams: ['600', '801', '800', '601']
