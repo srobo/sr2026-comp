@@ -1,0 +1,36 @@
+arena_id: main
+arena_zones:
+  0:
+    blue: 0
+    red: 2
+  1:
+    blue: 0
+    red: 0
+  2:
+    blue: 0
+    red: 1
+  3:
+    blue: 0
+    red: 0
+match_number: 12
+teams:
+  BRK:
+    disqualified: false
+    left_starting_zone: false
+    present: true
+    zone: 1
+  CLY:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 3
+  TFS:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 2
+  TLC:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 0
