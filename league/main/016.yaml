@@ -1,0 +1,36 @@
+arena_id: main
+arena_zones:
+  0:
+    blue: 0
+    red: 1
+  1:
+    blue: 0
+    red: 0
+  2:
+    blue: 0
+    red: 0
+  3:
+    blue: 0
+    red: 0
+match_number: 16
+teams:
+  QMC:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 2
+  SWL:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 3
+  TFS:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 0
+  WGS:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 1
