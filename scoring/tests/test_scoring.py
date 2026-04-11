@@ -200,6 +200,14 @@ class ScorerTests(unittest.TestCase):
             code='too_many_tokens',
         )
 
+    def test_left_starting_zone_not_present(self) -> None:
+        self.teams_data['GGG']['present'] = False
+        self.teams_data['GGG']['left_starting_zone'] = True
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='left_starting_zone_not_present',
+        )
+
 
 if __name__ == '__main__':
     unittest.main()
