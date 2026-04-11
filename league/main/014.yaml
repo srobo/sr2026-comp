@@ -1,0 +1,36 @@
+arena_id: main
+arena_zones:
+  0:
+    blue: 1
+    red: 0
+  1:
+    blue: 0
+    red: 0
+  2:
+    blue: 0
+    red: 3
+  3:
+    blue: 1
+    red: 1
+match_number: 14
+teams:
+  CCR:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 3
+  DCS:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 0
+  HRS:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 2
+  PSC:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 1
