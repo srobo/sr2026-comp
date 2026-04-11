@@ -21,7 +21,7 @@ teams:
     zone: 2
   CLY:
     disqualified: false
-    left_starting_zone: false
+    left_starting_zone: true  # Adjustment due to arena tiles static crashing their robot
     present: true
     zone: 0
   HRS:

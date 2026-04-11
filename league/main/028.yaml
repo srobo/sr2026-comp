@@ -16,7 +16,7 @@ match_number: 28
 teams:
   CLY:
     disqualified: false
-    left_starting_zone: false
+    left_starting_zone: true  # Adjustment due to arena tiles static crashing their robot
     present: true
     zone: 1
   HAB:
