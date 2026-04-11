@@ -143,6 +143,46 @@ class ScorerTests(unittest.TestCase):
             self.zones,
         )
 
+    # Invalid scenarios
+
+    def test_negative_red(self) -> None:
+        self.zones[0]['red'] = -1
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='negative_sample_input',
+        )
+
+    def test_negative_red_when_many_positive(self) -> None:
+        self.zones[0]['red'] = -1
+        self.zones[1]['red'] = 9
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='negative_sample_input',
+        )
+
+    def test_negative_blue(self) -> None:
+        self.zones[0]['blue'] = -1
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='negative_sample_input',
+        )
+
+    def test_negative_blue_when_many_positive(self) -> None:
+        self.zones[0]['blue'] = -1
+        self.zones[1]['blue'] = 9
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='negative_sample_input',
+        )
+
+    def test_negative_both(self) -> None:
+        self.zones[0]['red'] = -1
+        self.zones[0]['blue'] = -1
+        self.assertInvalidScoresheet(
+            self.zones,
+            code='negative_sample_input',
+        )
+
     # Impossible scenarios
 
     def test_too_many_tokens_simple(self) -> None:
