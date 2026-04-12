@@ -118,8 +118,8 @@ knockout:
         minimum: 300    # 5 minutes
         nominal: 300    # 5 minutes
       8:  # Lower Semi Final
-        delay_flex: 0
-        minimum: 900    # 15 minutes
+        delay_flex: 120
+        minimum: 780    # 13 minutes
         nominal: 900    # 15 minutes
       9:  # Grand Final
         delay_flex: 0
