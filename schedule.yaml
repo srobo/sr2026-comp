@@ -31,7 +31,9 @@ staging:
 timezone: Europe/London
 #
 # Delays which happened, record the wall-clock time and desired duration.
-delays: []
+delays:
+- delay: 120
+  time: 2026-04-12 12:57:57+01:00
 
 #
 # Timings during which match slots of a given type (league, knockout) can be
@@ -122,7 +124,7 @@ static_knockout:
           arena: main
           display_name: Upper Round 1 Match 4
           bracket: upper
-          start_time: 2026-04-12 12:59:00+01:00
+          start_time: 2026-04-12 13:01:00+01:00
           teams: [S20, S13, S12, S21]
     1:
       display_name: Upper Round 2
@@ -131,25 +133,25 @@ static_knockout:
           arena: main
           display_name: Upper Round 2 Match 1
           bracket: upper
-          start_time: 2026-04-12 13:14:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 13:16:00+01:00 # Extra 5 minutes here
           teams: ['000', S8, '011', S1]
         1:
           arena: main
           display_name: Upper Round 2 Match 2
           bracket: upper
-          start_time: 2026-04-12 13:19:00+01:00
+          start_time: 2026-04-12 13:21:00+01:00
           teams: ['001', '010', S7, S2]
         2:
           arena: main
           display_name: Upper Round 2 Match 3
           bracket: upper
-          start_time: 2026-04-12 13:24:00+01:00
+          start_time: 2026-04-12 13:26:00+01:00
           teams: [S6, '020', S3, '031']
         3:
           arena: main
           display_name: Upper Round 2 Match 4
           bracket: upper
-          start_time: 2026-04-12 13:29:00+01:00
+          start_time: 2026-04-12 13:31:00+01:00
           teams: ['021', '030', S4, S5]
     2:
       display_name: Lower Round 1
@@ -158,25 +160,25 @@ static_knockout:
           arena: main
           display_name: Lower Round 1 Match 1
           bracket: lower
-          start_time: 2026-04-12 13:39:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 13:41:00+01:00 # Extra 5 minutes here
           teams: ['022', '112', '033', '103']
         1:
           arena: main
           display_name: Lower Round 1 Match 2
           bracket: lower
-          start_time: 2026-04-12 13:44:00+01:00
+          start_time: 2026-04-12 13:46:00+01:00
           teams: ['113', '102', '023', '032']
         2:
           arena: main
           display_name: Lower Round 1 Match 3
           bracket: lower
-          start_time: 2026-04-12 13:49:00+01:00
+          start_time: 2026-04-12 13:51:00+01:00
           teams: ['132', null, '123', '002']
         3:
           arena: main
           display_name: Lower Round 1 Match 4
           bracket: lower
-          start_time: 2026-04-12 13:54:00+01:00
+          start_time: 2026-04-12 13:56:00+01:00
           teams: ['122', '133', '012', null]
     3:
       display_name: Upper Round 3
@@ -185,13 +187,13 @@ static_knockout:
           arena: main
           display_name: Upper Round 3 Match 1
           bracket: upper
-          start_time: 2026-04-12 13:59:00+01:00
+          start_time: 2026-04-12 14:01:00+01:00
           teams: ['121', '111', '100', '130']
         1:
           arena: main
           display_name: Upper Round 3 Match 2
           bracket: upper
-          start_time: 2026-04-12 14:04:00+01:00
+          start_time: 2026-04-12 14:06:00+01:00
           teams: ['131', '120', '110', '101']
     4:
       display_name: Lower Round 2
@@ -200,13 +202,13 @@ static_knockout:
           arena: main
           display_name: Lower Round 2 Match 1
           bracket: lower
-          start_time: 2026-04-12 14:14:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 14:16:00+01:00 # Extra 5 minutes here
           teams: ['200', '211', '221', '230']
         1:
           arena: main
           display_name: Lower Round 2 Match 2
           bracket: lower
-          start_time: 2026-04-12 14:19:00+01:00
+          start_time: 2026-04-12 14:21:00+01:00
           teams: ['220', '201', '231', '210']
     5:
       display_name: Lower Round 3
@@ -215,13 +217,13 @@ static_knockout:
           arena: main
           display_name: Lower Round 3 Match 1
           bracket: lower
-          start_time: 2026-04-12 14:39:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 14:41:00+01:00 # Extra 5 minutes here
           teams: ['411', '303', '312', '400']
         1:
           arena: main
           display_name: Lower Round 3 Match 2
           bracket: lower
-          start_time: 2026-04-12 14:44:00+01:00
+          start_time: 2026-04-12 14:46:00+01:00
           teams: ['410', '302', '401', '313']
     6:
       display_name: Upper Semi Final
@@ -230,7 +232,7 @@ static_knockout:
           arena: main
           display_name: Upper Semi Final
           bracket: upper
-          start_time: 2026-04-12 14:54:00+01:00
+          start_time: 2026-04-12 14:56:00+01:00
           teams: ['301', '310', '311', '300']
     7:
       display_name: Lower Round 4
@@ -239,7 +241,7 @@ static_knockout:
           arena: main
           display_name: Lower Round 4 Match 1
           bracket: lower
-          start_time: 2026-04-12 15:04:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 15:06:00+01:00 # Extra 5 minutes here
           teams: ['500', '511', '510', '501']
     8:
       display_name: Lower Semi Final
@@ -248,7 +250,7 @@ static_knockout:
           arena: main
           display_name: Lower Semi Final
           bracket: lower
-          start_time: 2026-04-12 15:24:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 15:26:00+01:00 # Extra 5 minutes here
           teams: ['700', '602', '701', '603']
     9:
       display_name: Grand Final
@@ -257,5 +259,5 @@ static_knockout:
           arena: main
           display_name: Grand Final
           bracket: upper
-          start_time: 2026-04-12 15:44:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 15:46:00+01:00 # Extra 5 minutes here
           teams: ['600', '801', '800', '601']
