@@ -81,6 +81,18 @@ class Scorer:
                     code='too_many_tokens',
                 )
 
+        left_starting_zone_not_present = [
+            tla
+            for tla, info in self._teams_data.items()
+            if info['left_starting_zone'] and not info['present']
+        ]
+        if left_starting_zone_not_present:
+            raise InvalidScoresheetException(
+                "Teams not present cannot have left their laboratory, "
+                f"check {left_starting_zone_not_present!r}.",
+                code='left_starting_zone_not_present',
+            )
+
 
 if __name__ == '__main__':
     import libproton

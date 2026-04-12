@@ -31,7 +31,9 @@ staging:
 timezone: Europe/London
 #
 # Delays which happened, record the wall-clock time and desired duration.
-delays: []
+delays:
+- delay: 120
+  time: 2026-04-12 12:57:57+01:00
 
 #
 # Timings during which match slots of a given type (league, knockout) can be

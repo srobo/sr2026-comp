@@ -12,25 +12,25 @@ arena_zones:
   3:
     blue: 0
     red: 0
-match_number: 0
+match_number: 26
 teams:
-  BRK:
-    disqualified: false
-    left_starting_zone: false
-    present: true
-    zone: 3
-  CLY:
-    disqualified: false
-    left_starting_zone: true  # Adjustment due to arena tiles static crashing their robot
-    present: true
-    zone: 0
-  HRO:
+  DCS:
     disqualified: false
     left_starting_zone: true
     present: true
     zone: 1
-  WGS:
+  HRO:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 0
+  MAI:
+    disqualified: false
+    left_starting_zone: true
+    present: true
+    zone: 2
+  PSC:
     disqualified: false
     left_starting_zone: false
     present: true
-    zone: 2
+    zone: 3
