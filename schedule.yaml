@@ -230,7 +230,7 @@ static_knockout:
           arena: main
           display_name: Upper Semi Final
           bracket: upper
-          start_time: 2026-04-12 14:49:00+01:00
+          start_time: 2026-04-12 14:54:00+01:00
           teams: ['301', '310', '311', '300']
     7:
       display_name: Lower Round 4
