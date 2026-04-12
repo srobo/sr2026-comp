@@ -107,11 +107,14 @@ knockout:
         delay_flex: 0
         minimum: 900    # 15 minutes
         nominal: 900    # 15 minutes
-      # 6: Upper Semi Final
+      6:  # Upper Semi Final
+        delay_flex: 0
+        minimum: 300    # 5 minutes
+        nominal: 300    # 5 minutes
       7:  # Lower Round 4
         delay_flex: 0
-        minimum: 600    # 10 minutes
-        nominal: 600    # 10 minutes
+        minimum: 300    # 5 minutes
+        nominal: 300    # 5 minutes
       8:  # Lower Semi Final
         delay_flex: 0
         minimum: 900    # 15 minutes
