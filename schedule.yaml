@@ -250,7 +250,7 @@ static_knockout:
           arena: main
           display_name: Lower Semi Final
           bracket: lower
-          start_time: 2026-04-12 15:26:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 15:24:00+01:00 # Extra 3 minutes here
           teams: ['700', '602', '701', '603']
     9:
       display_name: Grand Final
@@ -259,5 +259,5 @@ static_knockout:
           arena: main
           display_name: Grand Final
           bracket: upper
-          start_time: 2026-04-12 15:46:00+01:00 # Extra 5 minutes here
+          start_time: 2026-04-12 15:44:00+01:00 # Extra 5 minutes here
           teams: ['600', '801', '800', '601']
